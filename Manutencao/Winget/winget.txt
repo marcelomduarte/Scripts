@@ -1,0 +1,54 @@
+### winget
+
+Documentação oficial (https://learn.microsoft.com/pt-br/windows/package-manager/winget)
+
+#### Verificar se o winget está instalado
+
+winget --version
+
+Notas:
+
+Se o winget estiver instalado em seu computador, ele exibirá a versão que você instalou. Caso contrário, você verá uma mensagem de erro.
+
+#### Instalar o winget
+
+Se o winget não estiver instalado, obtenha o Instalador do Aplicativo na Microsoft Store:
+
+https://apps.microsoft.com/store/detail/instalador-de-aplicativo/9NBLGGH4NNS1?hl=pt-br&gl=br&rtc=1
+
+#### Comando install (winget)
+
+winget install [[-q] \<query> ...] [\<options>]
+    Sintaxe do comando install
+
+Opções: 
+
+--id
+    Especificar com precisão o pacote que você deseja instalar
+
+--exact
+    Instala exatamente o pacote fornecido, sem fazer correspondências aproximadas.
+
+--accept-package-agreements
+    Usado para aceitar o contrato de licença e evitar o prompt.
+
+--accept-source-agreements
+    Usado para aceitar o contrato de licença de origem e evitar o prompt.
+
+--source winget
+	O "--source" aponta para uma fonte específica. Nesse caso, ele aponta para fonte padrão do winget.
+    Busca e instala apartir dessa fonte.
+
+Exemplo:
+
+winget install --id=7zip.7zip  --exact --accept-package-agreements --accept-source-agreements --source winget
+
+Obs.:: Execute esse código como administrador.
+
+#### Sites
+ 
+GitHub (https://github.com/microsoft/winget-cli)
+
+winget.run (https://winget.run)
+
+winstall (https://winstall.app)
